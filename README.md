@@ -4,7 +4,7 @@ This project is a simple implementation of a Tic Tac Toe game using the Tkinter 
 
 # Explaination
 
-Importing Libraries:
+### Importing Libraries:
 ```
 import tkinter as tk
 from tkinter import messagebox
@@ -12,7 +12,7 @@ import random
 ```
 The code starts by importing the necessary libraries: tkinter for GUI, messagebox for displaying message boxes, and random for generating computer moves.
 
-Class Definition: TicTacToe:
+### Class Definition: TicTacToe:
 ```
 class TicTacToe:
     def __init__(self, master):
