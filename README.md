@@ -1,6 +1,12 @@
 # TicTacToe
 This project is a simple implementation of a Tic Tac Toe game using the Tkinter library in Python, featuring a player-versus-computer gameplay with a basic random move strategy for the computer player.
 
+# Working
+
+https://github.com/PRATIKK0709/TicTacToe/assets/139443204/1feeadda-dac2-4aca-9778-a99e8592574d
+
+
+
 
 # Explaination
 
