@@ -19,7 +19,7 @@ class TicTacToe:
 ```
 The main class is defined for the Tic Tac Toe game. The constructor (`__init__`) initializes the game by setting up the GUI, creating the game board, and starting the game with the computer making the first move.
 
-Initialization:
+### Initialization:
 ```
 self.master.title("Tic Tac Toe")
 self.current_player = 'X'
@@ -27,7 +27,7 @@ self.board = [['' for _ in range(3)] for _ in range(3)]
 ```
 Initial settings include setting the window title, initializing the current player as 'X', and creating an empty 3x3 game board represented as a list.
 
-Creating Buttons:
+### Creating Buttons:
 ```
 self.buttons = [[tk.Button(master, text='', font=('Arial', 24), width=5, height=2,
                            command=lambda row=row, col=col: self.on_click(row, col))
@@ -35,7 +35,7 @@ self.buttons = [[tk.Button(master, text='', font=('Arial', 24), width=5, height=
 ```
 Buttons are created for each cell in the 3x3 grid, and their click events are linked to the on_click method.
 
-Placing Buttons in the Grid:
+### Placing Buttons in the Grid:
 ```
 for row in range(3):
     for col in range(3):
@@ -43,43 +43,43 @@ for row in range(3):
 ```
 The buttons are placed in the Tkinter grid layout.
 
-Starting the Game:
+### Starting the Game:
 ```
 self.computer_move()
 ```
 The game starts with the computer making the first move.
 
-Handling Player Clicks:
+### Handling Player Clicks:
 ```
 def on_click(self, row, col):
 ```
 This method is called when a player clicks a button. It checks if the clicked cell is empty for the current player ('X'), updates the board, and checks for a winner or a tie. If neither, it switches to the computer's turn.
 
-Computer Move:
+### Computer Move:
 ```
 def computer_move(self):
 ```
 The computer makes a move using a simple random strategy. It selects an empty cell randomly, updates the board, and checks for a win or tie.
 
-Checking for a Winner:
+### Checking for a Winner:
 ```
 def check_winner(self):
 ```
 This method checks for a win by examining rows, columns, and diagonals.
 
-Checking for a Tie:
+### Checking for a Tie:
 ```
 def is_board_full(self):
 ```
 It checks if the board is full, indicating a tie.
 
-Resetting the Board:
+### Resetting the Board:
 ```
 def reset_board(self):
 ```
 This method resets the board for a new game.
 
-Main Section:
+### Main Section:
 ```
 if __name__ == "__main__":
     root = tk.Tk()
